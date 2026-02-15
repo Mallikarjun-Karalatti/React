@@ -35,7 +35,7 @@ Header {
 
 .logo-container {
     display: flex;
-    gap : 10px ;
+    gap: 10px;
     font-size: 0.55rem;
     font-weight: 400;
 }
@@ -52,14 +52,14 @@ Header {
     font-weight: 400;
 }
 
-.react-facts > li::marker {
+.react-facts>li::marker {
     color: #00d8ff;
     font-size: 1.5rem;
 }
 
 main {
     max-width: 1045px;
-    padding : 35px;
+    padding: 35px;
     margin: 0 auto;
 }
 

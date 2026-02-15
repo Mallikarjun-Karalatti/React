@@ -1,11 +1,13 @@
+const navLinks = ["Pricing", "About", "Contact"];
+
 export default function NavBar() {
     return (
         <nav>
             <ul className="nav-list">
-                <li>Pricing</li>
-                <li>About</li>
-                <li>Contact</li>
+                {navLinks.map((li) => (
+                    <li key={li}>{li}</li>
+                ))}
             </ul>
         </nav>
-    )
+    );
 }
