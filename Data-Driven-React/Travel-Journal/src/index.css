@@ -1,6 +1,9 @@
 :root {
   --header-bg : #F55A5A;
   --header-txt : #FFFFFF;
+  --link-txt: #6a605e;
+  --primary-txt: #130b0b;
+  --secondary-txt: #332c2c;
 }
 
 html, body {
@@ -11,14 +14,16 @@ html, body {
 
 #root {
   height: 100vh;
+  font-family: Inter, sans-serif;
 }
 
 .header {
-  font-family: Inter, Arial, Helvetica, sans-serif;
   background: var(--header-bg);
   border-radius: 15px 15px 0 0;
   color: var(--header-txt);
   font-size: 8px;
+  font-weight: 200;
+  letter-spacing: 0.1rem;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -29,5 +34,62 @@ html, body {
 
 .destination-card {
   display: flex;
-  gap: 20px;
+  gap: 30px;
+  margin: 20px 20px;
+}
+
+.destinImg{
+  height: 180px;
+  width: 140px;
+  border-radius: 6px;
+}
+
+.destination-card p{
+  color: var(--primary-txt);
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.destination-card h2{
+  font-weight: 800;
+  font-size: 18px;
+  color: #6ab952;
+  margin: 0;
+}
+
+.destn-loc {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.destn-loc p {
+  letter-spacing: 0.15rem;
+}
+
+.destn-loc a{
+  text-align: none;
+  color : var(--link-txt);
+  font-size: 11px;
+  font-weight: 300;
+}
+
+.duration {
+   color: var(--secondary-txt);
+   font-size: 14px;
+   font-weight: 600;
+}
+
+@media (max-width:500px){
+  .destination-card{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dest-content{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  }
 }

@@ -1,26 +1,24 @@
 import markerIcon from '../assets/marker-icon.gif'
 
 export default function DestinationCard(props) {
+    console.log(props);
 
-    const { destination, country, location, dateFrom, dateTo, description, imgSrc } = props;
-    console.log(imgSrc)
+    const { destinationImg, destination, country, googleMapsLink, duration, description } = props;
+
     return (
         <>
             {
                 
                     <div className="destination-card">
-                        <img src={imgSrc} width={120} height={150}/>
+                        <img className="destinImg" src={destinationImg.src} alt={destinationImg.alt}/>
                         <div className="dest-content">
-                            <div className="dest-loc">
-                                <img src={markerIcon} width={10} />
+                            <div className="destn-loc">
+                                <img src={markerIcon} width={15} />
                                 <p>{country}</p>
-                                <a href={location}>View on Google Maps</a>
+                                <a href={googleMapsLink}>View on Google Maps</a>
                             </div>
                             <h2>{destination}</h2>
-                            <div className="duration">
-                                <span>{dateFrom}</span>
-                                <span>{dateTo}</span>
-                            </div>
+                           <h3 className='duration'>{duration}</h3>
                             <p>{description}</p>
                         </div>
                     </div>
