@@ -1,0 +1,93 @@
+:root {
+  --secondary : #f0ebeb;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  padding: 5px;
+}
+
+#root{
+  background: #f7f7f7;
+  height: 100%;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  background:#ffffff;
+  box-shadow: 0 3px 3px #cbc9c9;
+}
+
+form {
+  width: 80%;
+  margin: 45px auto;
+}
+
+#inputIngredient {
+  width: 60%;
+  margin-right: 10px;
+  padding: 8px;
+  border: 1px solid #dad9d9;
+  border-radius: 4px;
+}
+
+#addIngrdntBtn {
+  width: 25%;
+  padding: 8px;
+  border: 1px solid #dad9d9;
+  border-radius: 4px;
+  background-color: #181515;
+  color: var(--secondary);
+}
+
+#recipe-container {
+  width: 80%;
+  margin: 10px auto;
+}
+
+.get-recipe-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  width: 75%;
+  background: #e8e7e5;
+  border-radius: 10px;
+}
+
+.get-recipe-container button {
+  width: 8rem;
+  height: 2rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #d18268;
+  color: var(--secondary);
+}
+
+.get-recipe-container h3 {
+  font-weight: 500;
+  color: #4d4c4b;
+}
+
+.get-recipe-container p {
+  color: #7f726b;
+  font-size: 0.9rem;
+}
+
+.ingredient-list {
+  line-height: 2rem;
+}
+
+@media (min-width:800px){
+  form {
+    flex-direction: column;
+  }
+}
